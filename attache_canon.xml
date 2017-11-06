@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="attachecanon">
+    <annotation>Yumi</annotation>
+    <description/>
+    <typeDesc>attache_canon</typeDesc>
+    <filename>attache_canon.i3d</filename>
+    <size width="1.5" length="0.5"/>
+    <inputAttacherJoints>
+        <inputAttacherJoint lowerDistanceToGround="0.5" upperDistanceToGround="1" index="1" jointType="implement" rootNode="0>" needsLowering="false"/>
+    </inputAttacherJoints>
+    <attacherPoint index="3" rootNode="0>"/>
+    <washable dirtDuration="50" washDuration="1" workMultiplier="4"/>
+    <components count="1">
+        <component1 centerOfMass="0 0 0" solverIterationCount="4"/>
+    </components>
+    <schemaOverlay file="$dataS2/menu/schemas/implementSchema.png" fileSelected="$dataS2/menu/schemas/implementSchemaSelected.png" width="0.5" height="0.5" attacherJointPosition="0 0"/>
+    <storeData>
+        <name>
+            <en>Attache Canon</en>
+            <de>Attache Canon</de>
+        </name>
+        <functions/>
+        <specs/>
+        <image>Store_barre.dds</image>
+        <price>10</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>600</lifetime>
+        <rotation>180</rotation>
+        <brand>IRRIFRANCE</brand>
+        <category>sprayers</category>
+    </storeData>
+</vehicle>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="acmat_1" materialId="8" diffuseColor="0.0901961 0.0901961 0.0901961 1" ambientColor="1 1 1">
+    </Material>
+    <Material name="acmat_3" materialId="6" diffuseColor="0.2 0.2 0.2 1" ambientColor="1 1 1">
+    </Material>
+    <Material name="Color_009_" materialId="7" diffuseColor="1 1 1 1" ambientColor="1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="attache_canon.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="attache_canon" dynamic="true" collisionMask="8194" density="5" clipDistance="300" nodeId="12" materialIds="7" nonRenderable="true">
+      <Shape shapeId="2" name="AkkerSchiene" translation="0 0.19962 -0.0169629" rotation="-10 0 0" nodeId="13" materialIds="8,6" castsShadows="true" receiveShadows="true"/>
+      <TransformGroup name="attacherJoint" translation="-4.6106e-09 0.188729 0.00646488" rotation="0 90 0" nodeId="14"/>
+      <TransformGroup name="topReferencePoint" translation="0 0.617289 0.428968" nodeId="15"/>
+      <TransformGroup name="Attache_Pulverisateur" translation="2.23255e-08 1.2 0" rotation="0 90 0" nodeId="16"/>
+    </Shape>
+  </Scene>
+
+</i3D>

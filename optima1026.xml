@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="optima1036">
+	
+    <moreRealistic>		
+      <dragArea value="10.3" />		
+    </moreRealistic>
+  
+    <annotation>Nico0179</annotation>
+    <description/>
+    <typeDesc>
+                Optima_1026
+                Optima_1026
+    </typeDesc>
+    <filename>optima1026.i3d</filename>
+    <size width="3.5" length="7.5"/>
+    <speedLimit value="15"/>
+    <wheelConfigurations>
+        <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+            <wheels>
+                <wheel repr="0>3" forcePointRatio="0.2" filename="$data/vehicles/wheels/trelleborg/AW305_260_70R15_3.xml" color="0.3 0.3 0.3 1" isLeft="true" restLoad="0.8" initialCompression="0" suspTravel="0.05" spring="30" damper="11" hasTireTracks="true" tireTrackAtlasIndex="3" frictionScale="2" hasParticles="true" axisColor="1 0.05 0 1"/>
+                <wheel repr="0>4" forcePointRatio="0.2" filename="$data/vehicles/wheels/trelleborg/AW305_260_70R15_3.xml" color="0.3 0.3 0.3 1" isLeft="false" restLoad="0.8" initialCompression="0" suspTravel="0.05" spring="30" damper="11" hasTireTracks="true" tireTrackAtlasIndex="3" frictionScale="2" hasParticles="true" axisColor="1 0.05 0 1"/>
+
+
+                <wheel repr="3>2" filename="$data/vehicles/wheels/trelleborg/AW305_10_80R12.xml" color="0.3 0.3 0.3 1" isLeft="true" restLoad="0.8" initialCompression="0" suspTravel="0.01" spring="1" damper="0.5" />
+                <wheel repr="3>3" filename="$data/vehicles/wheels/trelleborg/AW305_10_80R12.xml" color="0.3 0.3 0.3 1" isLeft="false" restLoad="0.8" initialCompression="0" suspTravel="0.01" spring="1" damper="0.5" />
+                <wheel restLoad="0.3" repr="3>5" radius="0.31" initialCompression="25" suspTravel="0.05" spring="20" damper="20" frictionScale="1.5" rotationDamping="0.002" mass="0.1" />
+            </wheels>
+        </wheelConfiguration>
+        <wheelConfiguration name="$l10n_configuration_valueWheelBroad" price="400" icon="$dataS2/menu/hud/configurations/config_wheel_broad.png">
+            <wheels>
+                <wheel repr="0>3" forcePointRatio="0.2" filename="$data/vehicles/wheels/trelleborg/T404_400_60R15_5.xml" color="0.3 0.3 0.3 1" isLeft="true" restLoad="0.8" initialCompression="0" suspTravel="0.05" spring="30" damper="11" hasTireTracks="true" tireTrackAtlasIndex="3" frictionScale="2" hasParticles="true" axisColor="1 0.05 0 1"/>
+                <wheel repr="0>4" forcePointRatio="0.2" filename="$data/vehicles/wheels/trelleborg/T404_400_60R15_5.xml" color="0.3 0.3 0.3 1" isLeft="false" restLoad="0.8" initialCompression="0" suspTravel="0.05" spring="30" damper="11" hasTireTracks="true" tireTrackAtlasIndex="3" frictionScale="2" hasParticles="true" axisColor="1 0.05 0 1"/>
+
+
+                <wheel repr="3>2" filename="$data/vehicles/wheels/trelleborg/AW305_300_80R15_3.xml" color="0.3 0.3 0.3 1" isLeft="true" restLoad="0.8" initialCompression="0" suspTravel="0.01" spring="1" damper="0.5" />
+                <wheel repr="3>3" filename="$data/vehicles/wheels/trelleborg/AW305_300_80R15_3.xml" color="0.3 0.3 0.3 1" isLeft="false" restLoad="0.8" initialCompression="0" suspTravel="0.01" spring="1" damper="0.5" />
+                <wheel restLoad="0.3" repr="3>5" radius="0.31" initialCompression="25" suspTravel="0.05" spring="20" damper="20" frictionScale="1.5" rotationDamping="0.002" mass="0.1" />
+            </wheels>
+        </wheelConfiguration>
+    </wheelConfigurations>
+    
+    <brakeForce>1</brakeForce>
+    <lights>
+        <low>
+            <light decoration="0>10|1|0|4" lightTypes="0"/>
+        </low>
+        <high>
+            <light decoration="0>10|1|0|4" lightTypes="0"/>
+        </high>
+        <states>0 1 2</states>
+    </lights>
+    <brakeLights>
+        <brakeLight decoration="0>10|1|0|2"/>
+    </brakeLights>
+    <beaconLights/>
+    <turnLights>
+        <turnLightLeft decoration="0>10|1|0|3|0"/>
+        <turnLightRight decoration="0>10|1|0|3|1"/>
+    </turnLights>
+    <inputAttacherJoints>
+        <inputAttacherJoint index="0>8" jointType="trailer" needsLowering="false"/>
+    </inputAttacherJoints>
+    <attacherJoints>
+        <attacherJoint index="3>4" jointType="trailer" rootNode="3>" allowsJointLimitMovement="false" canTurnOnImplement="true">
+          <schema position="1 0" rotation="0" invertX="false" />
+        </attacherJoint>
+        <attacherJoint index="3>1" jointType="trailer" rootNode="3>" allowsJointLimitMovement="false" upperRotationOffset="0" lowerRotLimit="0 0 0">
+          <schema position="0.5 0" rotation="0" invertX="false" />
+        </attacherJoint>
+    </attacherJoints>
+    <attacherPoint index="4>0" rootNode="4>"/>
+    <support animationName="moveSupport"/>
+    <workAreas>
+        <workArea startIndex="3>0|0|2" widthIndex="3>0|0|4" heightIndex="3>0|0|3" type="sprayer" disableBackwards="false"/>
+    </workAreas>
+    <turnedOnRotationNodes/>
+    <raingunRotatingParts degreePerSecond="50">
+        <raingunPart node="3>0|0">
+            <state minRot="-90" maxRot="90" speed="20" i18n="180_deg"/>
+            <state minRot="0" maxRot="90" speed="10" i18n="90_deg_left"/>
+            <state minRot="-90" maxRot="0" speed="10" i18n="90_deg_right"/>
+        </raingunPart>
+    </raingunRotatingParts>
+
+    <sprayUsageScales workingWidth="70.0" scale="0.5" />
+    <fillUnits>
+        <fillUnit unit="$l10n_unit_literShort" fillTypes="water" capacity="3020"/>
+    </fillUnits>
+    
+    <fillLitersPerSecond>18</fillLitersPerSecond>
+    <waterTrailerFillTrigger index="0>11" />
+    
+    <sprayer fillUnitIndex="1" unloadInfoIndex="1" loadInfoIndex="1" />
+    <spraySound file="$data/sounds/sprayer.wav" pitchOffset="1" volume="1"/>
+    <sprayParticleSystem file="Particles/Sprayparticle.i3d" />
+    <sprayValves>
+			<sprayValve index="3>0|0|1" />
+    </sprayValves>	
+    <cylinderedHydraulicSound file="$data/sounds/cultivatorHydraulic.wav" pitchOffset="0.65" volume="0.72"/>
+    <fillSound file="$data/maps/sounds/refuel.wav"                pitchOffset="1.00" volume="0.80" volume3D="0.80" innerRadius="10" radius="40" linkNode="0>"/>
+    <foldingParts startMoveDirection="0" posDirectionText="unfold_OBJECT" negDirectionText="fold_OBJECT">
+        <foldingPart animationName="rightFold" speedScale="0.55"/>
+    </foldingParts>
+    <animations>
+        <animation name="rightFold">
+            <part node="0>7" startTime="0" endTime="3.0" startRot="10 0 0" endRot="50 0 0"/>
+            <part node="0>10|2" startTime="0" endTime="3.0" startTrans="0.015 1.396 -0.523" endTrans="0.015 0.802 -1.183"/>
+            <part node="0>2" startTime="0" endTime="3.0" startRot="-34 0 0" endRot="-47 0 0"/>
+            <part node="0>2|0|0" startTime="0" endTime="3.0" startTrans="0 -0.016 -0.629" endTrans="0 -0.016 -0.955"/>
+        </animation>
+        <animation name="moveSupport">
+            <part node="0>1" startTime="0" endTime="2" startTrans="0.157 0.62 1.774" endTrans="0.157 0.15 1.774"/>
+        </animation>
+        <animation name="drumUnroll">
+            <part node="2>0|0|2" startTime="0" endTime="170" loadTime="0" starTrans="0 0 0" endTrans="0 0 -405.5"/>
+            <part node="0>10|0" startTime="0" endTime="170" loadTime="0" startRot="0 0 0" endRot="25000 0 0"/>
+            <part node="2>0|0|1" startTime="0" endTime="170" loadTime="0" starScale="1 1 0" endScale="1 1 100"/>
+            <part node="0>10|0|11" startTime="168" endTime="170" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|10" startTime="164" endTime="168" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|9" startTime="162" endTime="164" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|8" startTime="160" endTime="162" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|7" startTime="158" endTime="160" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|6" startTime="156" endTime="158" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|5" startTime="154" endTime="156" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|4" startTime="152" endTime="154" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|3" startTime="150" endTime="152" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|2" startTime="148" endTime="150" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|1" startTime="146" endTime="148" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|12" startTime="144" endTime="146" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|13" startTime="142" endTime="144" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|14" startTime="140" endTime="142" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|15" startTime="138" endTime="140" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|16" startTime="136" endTime="138" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|17" startTime="134" endTime="136" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|18" startTime="132" endTime="134" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|19" startTime="130" endTime="132" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|20" startTime="128" endTime="130" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|21" startTime="126" endTime="128" loadTime="0" starScale="0.7 2.5 0.7" endScale="0.6 2.5 0.6"/>
+            <part node="0>10|0|21" startTime="124" endTime="126" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|20" startTime="122" endTime="124" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|19" startTime="120" endTime="122" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|18" startTime="118" endTime="120" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|17" startTime="116" endTime="118" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|16" startTime="114" endTime="116" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|15" startTime="112" endTime="114" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|14" startTime="110" endTime="112" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|13" startTime="108" endTime="110" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|12" startTime="106" endTime="108" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|1" startTime="104" endTime="106" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|2" startTime="102" endTime="104" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|3" startTime="100" endTime="102" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|4" startTime="98" endTime="100" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|5" startTime="96" endTime="98" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|6" startTime="94" endTime="96" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|7" startTime="92" endTime="94" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|8" startTime="90" endTime="92" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|9" startTime="88" endTime="90" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|10" startTime="86" endTime="88" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|11" startTime="84" endTime="86" loadTime="0" starScale="0.8 2.5 0.8" endScale="0.7 2.5 0.7"/>
+            <part node="0>10|0|11" startTime="82" endTime="84" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|10" startTime="80" endTime="82" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|9" startTime="78" endTime="80" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|8" startTime="76" endTime="78" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|7" startTime="74" endTime="76" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|6" startTime="72" endTime="74" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|5" startTime="70" endTime="72" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|4" startTime="68" endTime="70" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|3" startTime="66" endTime="68" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|2" startTime="64" endTime="66" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|1" startTime="62" endTime="64" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|12" startTime="60" endTime="62" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|13" startTime="58" endTime="60" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|14" startTime="56" endTime="58" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|15" startTime="54" endTime="56" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|16" startTime="52" endTime="54" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|17" startTime="50" endTime="52" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|18" startTime="48" endTime="50" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|19" startTime="46" endTime="48" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|20" startTime="44" endTime="46" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|21" startTime="42" endTime="44" loadTime="0" starScale="0.9 2.5 0.9" endScale="0.8 2.5 0.8"/>
+            <part node="0>10|0|21" startTime="40" endTime="42" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|20" startTime="38" endTime="40" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|19" startTime="36" endTime="38" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|18" startTime="34" endTime="36" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|17" startTime="32" endTime="34" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|16" startTime="30" endTime="32" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|15" startTime="28" endTime="30" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|14" startTime="26" endTime="28" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|13" startTime="24" endTime="26" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|12" startTime="22" endTime="24" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|1" startTime="20" endTime="22" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|2" startTime="18" endTime="20" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|3" startTime="16" endTime="18" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|4" startTime="14" endTime="16" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|5" startTime="12" endTime="14" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|6" startTime="10" endTime="12" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|7" startTime="8" endTime="10" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|8" startTime="6" endTime="8" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|9" startTime="4" endTime="6" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|10" startTime="2" endTime="4" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="0>10|0|11" startTime="0" endTime="2" loadTime="0" starScale="1 1 1" endScale="0.9 2.5 0.9"/>
+            <part node="2>0|0|0" startTime="124" endTime="168" loadTime="0" startRot="6 191 0" endRot="6 169 0"/>
+            <part node="2>0|0|0" startTime="82" endTime="124" loadTime="0" startRot="4 169 0" endRot="4 191 0"/>
+            <part node="2>0|0|0" startTime="40" endTime="82" loadTime="0" startRot="2 191 0" endRot="2 169 0"/>
+            <part node="2>0|0|0" startTime="0" endTime="40" loadTime="0" startRot="0 169 0" endRot="0 191 0"/>
+        </animation>
+    </animations>
+    <drumUnroll name="drumUnroll" upSpeedScale="1.05" downSpeedScale="-0.1"/>
+    <movingTools>
+        <movingTool index="2>0|0|2">
+            <componentJoint index="2" anchorActor="0"/>
+        </movingTool>
+        <movingTool index="0>10">
+            <controls axis="AXIS_FRONTLOADER_TOOL" icon="$dataS2/menu/moveControls/frontloader_tool.png" invertAxis="false" invertMouseAxis="false" mouseSpeedFactor="2.0"/>
+            <rotation rotSpeed="20" rotAcceleration="50" rotMax="90" rotMin="-90" rotationAxis="2"/>
+            <componentJoint index="0" anchorActor="0"/>
+            <componentJoint index="1" anchorActor="0"/>
+            <componentJoint index="2" anchorActor="0"/>
+            <componentJoint index="3" anchorActor="0"/>
+        </movingTool>
+        <movingTool index="0>10|1">
+            <controls axis="AXIS_FRONTLOADER_ARM" icon="$dataS2/menu/moveControls/frontloader_arm.png" invertAxis="false" invertMouseAxis="false" mouseSpeedFactor="5.0"/>
+            <rotation rotSpeed="20" rotAcceleration="10" rotMax="15" rotMin="-15" rotationAxis="1"/>
+            <componentJoint index="3" anchorActor="0"/>
+            <dependentPart index="0>10|3"/>
+            <dependentPart index="0>10|4"/>
+        </movingTool>
+    </movingTools>
+    <movingParts>
+        <movingPart index="0>10|3" referencePoint="0>10|1|1" referenceFrame="0>10">
+            <translatingPart index="0>10|3|0|0"/>
+        </movingPart>
+        <movingPart index="0>10|4" referencePoint="0>10|1|2" referenceFrame="0>10">
+            <translatingPart index="0>10|4|0|0"/>
+        </movingPart>
+    </movingParts>
+    <washable dirtDuration="50" washDuration="1" workMultiplier="4"/>
+    <sideskirtNode index="0>9"/>
+    <components count="5">
+        <component1 centerOfMass="0 0 -1.2" solverIterationCount="25" mrSetMass="3.85"/>
+        <!-- 0 chassis-->
+        <component2 centerOfMass="0 -1 0" solverIterationCount="25" mrSetMass="0.379"/> 
+        <!-- 1 Bobine-->
+        <component3 centerOfMass="0 0 0.03" solverIterationCount="25" mrSetMass="0.379"/> 
+        <!-- 2 Tuyau-->
+        <component4 centerOfMass="0 0 0.03" solverIterationCount="20" mrSetMass="0.351"/> 
+        <!-- 3 Canon-->
+        <component5 centerOfMass="0 0 0" solverIterationCount="20" mrSetMass="0.131"/>  
+        <!-- 4 Collision Portique-->
+        <joint component1="0" component2="1" index="0>10" rotLimit="0 0 0" transLimit="0 0 0"/>
+        <!-- 0 chassis/Bobine-->
+        <!-- Jointindex 0 -->
+        <joint component1="0" component2="2" index="0>10" rotLimit="50 10 0" transLimit="0 0 0"/>
+        <!-- 1 Bobine/Tuyau-->
+        <!-- Jointindex 1 -->
+        <joint component1="2" component2="3" index="2>0|0|2" rotLimit="50 0 10" transLimit="0 0 0"/>
+        <!-- 2 Tuyau/Canon-->
+        <!-- Jointindex 2 -->
+        <joint component1="0" component2="4" index="0>10|1|3" rotLimit="0 0 0" transLimit="0 0 0"/>
+        <!-- 3 Bobine/Portique-->
+        <!-- Jointindex 3 -->
+    </components>
+    <schemaOverlay file="$dataS2/menu/schemas/implementSchema.png" fileSelected="$dataS2/menu/schemas/implementSchemaSelected.png" fileTurnedOn="$dataS2/menu/schemas/implementSchemaTurnedOn.png" fileSelectedTurnedOn="$dataS2/menu/schemas/implementSchemaSelectedTurnedOn.png" width="0.5" height="0.5" attacherJointPosition="0 0"/>
+    <storeData>
+        <name>
+            <en>Optima_1026</en>
+            <fr>Optima_1026</fr>
+            <de>Optima_1026</de>
+        </name>
+        <functions/>
+        <specs>
+            <workingWidth>70.0</workingWidth>
+            <combination>Attache canon</combination>
+        </specs>
+        <functions>
+            <function>$l10n_function_sprayer</function>
+        </functions>
+        <image>Store_1026.dds</image>
+        <price>20000</price>
+        <dailyUpkeep>1</dailyUpkeep>
+        <lifetime>600</lifetime>
+        <rotation>180</rotation>
+        <brand>IRRIFRANCE</brand>
+        <category>sprayers</category>
+        <fieldJob sizeCategory="1" typeCategory="sprayer" >
+            <dependency filename="attache_canon.xml" needsToBeFilled="false"/>
+        </fieldJob>
+    </storeData>
+</vehicle>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="threshingCutterMiddleParticleSystem" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="particle.png" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert2" materialId="7" ambientColor="1 1 1" alphaBlending="true">
+      <Emissivemap fileId="1"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Sprayparticle.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+    <ParticleSystem name="emitter1Ref" dynamicId="1" type="sprite" rate="0.19607" lifespan="6000" maxCount="5096" speed="0.018" speedRandom="0" tangentSpeed="0.01" normalSpeed="0.7" emitterShapeVelocityScale="0.8" spriteScaleX="0.13072" spriteScaleY="0.196075" spriteScaleXGain="0.00111112" spriteScaleYGain="0.0045098" blendFactor="0.05" blendInFactor="0.001" blendOutFactor="0.2">
+      <Gravity force="0 -0.6 0"/>
+    </ParticleSystem>
+  </Dynamics>
+
+  <Scene>
+    <Dynamic dynamicId="1" emitterShapeNodeId="14" name="emitter1" clipDistance="600" nodeId="13" materialIds="7" distanceBlending="false">
+      <Shape shapeId="2" name="pPlaneShape2" nodeId="14" materialIds="6" nonRenderable="true"/>
+    </Dynamic>
+  </Scene>
+
+</i3D>

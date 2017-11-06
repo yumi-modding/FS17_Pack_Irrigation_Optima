@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="32">
+    <author>nico0179, yumi, jujuokl</author>
+    <contributor>mike222</contributor>
+    <title>
+        <en>Irrifrance Optima irrigation drums pack</en>
+        <de>Irrifrance Optima Bewässerung Aufwickelvorrichtung</de>
+        <fr>Pack enrouleurs Irrifrance Optima</fr>
+    </title>
+    <description>
+        <en>Irrifrance Optima irrigation drums pack</en>
+        <de>Irrifrance Optima Bewässerung aufwickelvorrichtung</de>
+        <fr>Pack enrouleurs Irrifrance Optima</fr>
+    </description>
+    <multiplayer supported="true"/>
+    <iconFilename>Store_1036.dds</iconFilename>
+    <version>1.0</version>
+    <l10n>
+        <text name="input_Optima_ACCELERATE">
+            <en>Faster Rolling up (current: %d m/min)</en>
+            <de>Schneller aufrollen (aktuell: %d m/min)</de>
+            <fr>Accelerer Enroulement (actuelle : %d m/min)</fr>
+        </text>
+        <text name="input_Optima_STOP">
+            <en>Stop Rolling up and Spraying</en>
+            <de>Stoppen Sie die Wicklung und Bewässerung</de>
+            <fr>Stopper Enroulement et Arrosage</fr>
+        </text>
+        <text name="input_Optima_ROLLUP">
+            <en>Start Rolling up and Spraying</en>
+            <de>Starten Sie die Wicklung und Bewässerung</de>
+            <fr>Demarrer Enroulement et Arrosage</fr>
+        </text>
+        <text name="RAINGUNATTACHER_AttachObject">
+            <en>Attach Rain gun</en>
+            <de>Attach Regner</de>
+            <fr>Attacher Canon</fr>
+        </text>
+        <text name="RAINGUNATTACHER_DetachObject">
+            <en>Detach Rain gun</en>
+            <de>Detach Regner</de>
+            <fr>Detacher Canon</fr>
+        </text>
+        <text name="input_Optima_RAINGUN_ATTACH">
+            <en>Attach/Detach</en>
+            <de>Attach/Detach</de>
+            <fr>Attacher/Detacher</fr>
+        </text>
+        <text name="input_Optima_RAINGUN_ROTATION">
+            <en>Change spraying width</en>
+            <de>Sprühbreite ändern</de>
+            <fr>Modifier la largeur de bande</fr>
+        </text>
+        <text name="input_Optima_UNROLL_ATTACH">
+            <en>Attach/Detach Rain gun</en>
+            <de>Attach/Detach Regner</de>
+            <fr>Attacher/Détacher Canon</fr>
+        </text>
+        <text name="fold_OBJECT">
+            <en>Fold drum</en>
+            <de>Falten Bewässerung</de>
+            <fr>Replier l'enrouleur</fr>
+        </text>
+        <text name="unfold_OBJECT">
+            <en>Unfold drum</en>
+            <de>Entfalten Bewässerung</de>
+            <fr>Deplier l'enrouleur</fr>
+        </text>
+        <text name="Optima_RAINGUN_ROTATION_TEXT">
+            <en>Spray width (current: %s)</en>
+            <de>Sprühbreite (aktuell: %s)</de>
+            <fr>Largeur de bande (actuelle : %s)</fr>
+        </text>
+        <text name="180_deg">
+            <en>70m</en>
+            <de>70m</de>
+            <fr>70m</fr>
+        </text>
+        <text name="90_deg_left">
+            <en>35m left</en>
+            <de>35m Linke</de>
+            <fr>35m gauche</fr>
+        </text>
+        <text name="90_deg_right">
+            <en>35m right</en>
+            <de>35m Recht</de>
+            <fr>35m droite</fr>
+        </text>
+    </l10n>
+    <extraSourceFiles>
+        <sourceFile filename="Scripts/MPEvent.lua"/>
+        <sourceFile filename="Scripts/SetAttachEvent.lua"/>
+    </extraSourceFiles>
+    <specializations>
+        <specialization name="Irrigator" className="Irrigator" filename="Scripts/irrigator.lua"/>
+        <specialization name="RollingUp" className="RollingUp" filename="Scripts/RollingUp.lua"/>
+        <specialization name="raingunAttacher" className="raingunAttacher" filename="Scripts/raingunAttacher.lua"/>
+        <specialization name="Canon" className="Canon" filename="Scripts/Canon.lua"/>
+        <specialization name="Unroll" className="Unroll" filename="Scripts/Unroll.lua"/>
+    </specializations>
+    <vehicleTypes>
+        <type name="optima1036" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="attacherJoints"/>
+            <specialization name="lights"/>
+            <specialization name="workArea"/>
+            <specialization name="attachable"/>
+            <specialization name="animatedVehicle"/>
+            <specialization name="cylindered"/>
+            <specialization name="fillable"/>
+            <specialization name="fillVolume"/>
+            <specialization name="waterTrailer"/>
+            <specialization name="turnOnVehicle"/>
+            <specialization name="powerConsumer"/>
+            <specialization name="foldable"/>
+            <specialization name="washable"/>
+            <specialization name="mountable"/>
+            <specialization name="RollingUp"/>
+            <specialization name="raingunAttacher"/>
+            <specialization name="Canon"/>
+            <specialization name="Irrigator"/>
+        </type>
+        <type name="attachecanon" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="attacherJoints"/>
+            <specialization name="lights"/>
+            <specialization name="attachable"/>
+            <specialization name="washable"/>
+            <specialization name="Unroll"/>
+        </type>
+    </vehicleTypes>
+    <storeItems>
+        <storeItem xmlFilename="optima1036.xml"/>
+        <storeItem xmlFilename="optima1026.xml"/>
+        <storeItem xmlFilename="attache_canon.xml"/>
+    </storeItems>
+    <brands>
+        <brand name="IRRIFRANCE" title="Irrifrance" image="brand_irrifrance.dds"/>
+    </brands>
+    <inputBindings>
+        <input name="Optima_RAINGUN_ATTACH" category="VEHICLE" key1="KEY_KP_7" button=""/>
+        <input name="Optima_ACCELERATE" category="VEHICLE" key1="KEY_KP_4" button=""/>
+        <input name="Optima_RAINGUN_ROTATION" category="VEHICLE" key1="KEY_t" key2="" button="" device="0" mouse=""/>
+        <input name="Optima_UNROLL_ATTACH" category="VEHICLE" key1="KEY_KP_7" button=""/>
+    </inputBindings>
+</modDesc>
