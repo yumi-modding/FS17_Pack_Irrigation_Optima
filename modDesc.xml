@@ -26,7 +26,7 @@ L'enrouleur a besoin d'un point d'eau pour pulvériser vos cultures. Vous pouvez
     </description>
     <multiplayer supported="true"/>
     <iconFilename>Store_1036.dds</iconFilename>
-    <version>1.0</version>
+    <version>1.0.0.0</version>
     <l10n>
         <text name="input_Optima_ACCELERATE">
             <en>Faster Rolling up (current: %d m/min)</en>
