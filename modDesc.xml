@@ -3,14 +3,26 @@
     <author>nico0179, yumi, jujuokl</author>
     <contributor>mike222</contributor>
     <title>
-        <en>Irrifrance Optima irrigation drums pack</en>
+        <en>Irrifrance Optima Irrigation Drums Pack</en>
         <de>Irrifrance Optima Bewässerung Aufwickelvorrichtung</de>
-        <fr>Pack enrouleurs Irrifrance Optima</fr>
+        <fr>Pack Enrouleurs Irrifrance Optima</fr>
     </title>
     <description>
-        <en>Irrifrance Optima irrigation drums pack</en>
-        <de>Irrifrance Optima Bewässerung aufwickelvorrichtung</de>
-        <fr>Pack enrouleurs Irrifrance Optima</fr>
+        <en><![CDATA[
+The pack consists of 2 irrigation drums: 1026 (simple axle) and 1036 (double axle) with option on both for broad wheels.
+This irrigation system will fertilize your field (like a sprayer) but using water instead of fertilizer.
+The drum needs water provider to spray your crops. You can use following hydrant placeable mod to do so https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=77748&title=fs2017
+]]></en>
+        <de><![CDATA[
+Die Packung besteht aus 2 Beregnungsfässern: 1026 (einfache Achse) und 1036 (Doppelachse) mit Option auf beiden für breite Räder.
+Dieses Bewässerungssystem wird Ihr Feld (wie ein Sprühgerät) düngen, aber statt Dünger Wasser verwenden.
+Die Trommel braucht Wasserversorger, um Ihre Pflanzen zu besprühen. Sie können folgende hydrant placeable mod verwenden, um dies zu tun https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=77748&title=fs2017
+]]></de>
+        <fr><![CDATA[
+Le pack se compose de 2 enrouleurs d'irrigation: 1026 (simple essieu) et 1036 (double essieu) avec option sur les deux pour des roues larges.
+Le système d'irrigation fertilise vos champs (comme un pulvérisateur) mais utilise de l'eau à la place du fertilisant.
+L'enrouleur a besoin d'un point d'eau pour pulvériser vos cultures. Vous pouvez utiliser le mod plaçable suivant pour ceci https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=77748&title=fs2017
+]]></fr>
     </description>
     <multiplayer supported="true"/>
     <iconFilename>Store_1036.dds</iconFilename>
