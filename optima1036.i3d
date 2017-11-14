@@ -131,14 +131,14 @@
   </Dynamics>
 
   <Scene>
-    <Shape shapeId="1" name="optima1036" dynamic="true" compound="true" collisionMask="8397058" density="6" clipDistance="600" nodeId="63" materialIds="21" castsShadows="true" receiveShadows="true" nonRenderable="true">
-      <Shape shapeId="2" name="chassis" translation="0 0.82 -0.07" clipDistance="600" nodeId="64" materialIds="20" castsShadows="true" receiveShadows="true"/>
+    <Shape shapeId="1" name="optima1036" dynamic="true" compound="true" collisionMask="8397058" density="6" clipDistance="300" nodeId="63" materialIds="21" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <Shape shapeId="2" name="chassis" translation="0 0.82 -0.07" clipDistance="300" nodeId="64" materialIds="20" castsShadows="true" receiveShadows="true"/>
       <Shape shapeId="3" name="bequille" translation="0.15706 0.15 1.774" nodeId="65" materialIds="29" castsShadows="true" receiveShadows="true">
         <Shape shapeId="4" name="cube" translation="0 -0.109606 0" static="true" compoundChild="true" collisionMask="8450" nodeId="66" materialIds="21" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
       </Shape>
       <TransformGroup name="verin_av" translation="-0.032674 1.102 1.61668" rotation="-34 0 0" nodeId="67">
-        <Shape shapeId="5" name="verrin_av" clipDistance="600" nodeId="68" materialIds="9" castsShadows="true" receiveShadows="true">
-          <Shape shapeId="6" name="tige_av" translation="0 -0.0155178 -0.628852" clipDistance="600" nodeId="69" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="5" name="verrin_av" clipDistance="300" nodeId="68" materialIds="9" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="tige_av" translation="0 -0.0155178 -0.628852" clipDistance="300" nodeId="69" materialIds="9" castsShadows="true" receiveShadows="true"/>
         </Shape>
       </TransformGroup>
       <TransformGroup name="roue1" translation="1 0.45 -0.8" nodeId="70"/>
@@ -146,14 +146,14 @@
       <TransformGroup name="roue3" translation="1 0.45 -2.1" nodeId="72"/>
       <TransformGroup name="roue4" translation="-1 0.45 -2.1" nodeId="73"/>
       <TransformGroup name="pied_av" translation="-0.0359924 0.744 0.59175" rotation="10 0 0" nodeId="74">
-        <Shape shapeId="7" name="pied_av" clipDistance="600" nodeId="75" materialIds="9" castsShadows="true" receiveShadows="true">
-          <Shape shapeId="8" name="supportColl" translation="-0.017829 -0.012 0.909265" rotation="-45 0 0" compoundChild="true" collisionMask="8450" clipDistance="600" nodeId="76" materialIds="17" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="7" name="pied_av" clipDistance="300" nodeId="75" materialIds="9" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="8" name="supportColl" translation="-0.017829 -0.012 0.909265" rotation="-45 0 0" compoundChild="true" collisionMask="8450" clipDistance="300" nodeId="76" materialIds="17" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
         </Shape>
       </TransformGroup>
       <TransformGroup name="attacherjoint" translation="-0.0297234 0.917 2.27418" rotation="0 90 0" nodeId="77"/>
       <TransformGroup name="pieton" nodeId="78"/>
-      <Shape shapeId="9" name="tourelle" translation="-0.0466121 0.993 -1.009" clipDistance="600" nodeId="79" materialIds="14" castsShadows="true" receiveShadows="true">
-        <Shape shapeId="10" name="bobine" translation="0.0258237 1.76193 -0.00503416" clipDistance="600" nodeId="80" materialIds="8" castsShadows="true" receiveShadows="true">
+      <Shape shapeId="9" name="tourelle" translation="-0.0466121 0.993 -1.009" clipDistance="300" nodeId="79" materialIds="14" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="10" name="bobine" translation="0.0258237 1.76193 -0.00503416" clipDistance="300" nodeId="80" materialIds="8" castsShadows="true" receiveShadows="true">
           <TransformGroup name="transform" nodeId="81"/>
           <Shape shapeId="11" name="tuyau_enroule.001" rotation="0 -0 90" scale="1 2.5 1" nodeId="82" materialIds="18,21"/>
           <Shape shapeId="11" name="tuyau_enroule.001" translation="-0.0775331 -3.38908e-09 0" rotation="0 -0 90" scale="1 2.5 1" nodeId="83" materialIds="18,21"/>
@@ -207,21 +207,21 @@
           <TransformGroup name="attach" translation="0 -0.60148 -3.4227" rotation="0 90 0" nodeId="124"/>
         </TransformGroup>
         <TransformGroup name="pied_AR" translation="0.0152477 1.396 -0.523" rotation="-42 0 0" nodeId="125">
-          <Shape shapeId="19" name="pied_arriere" translation="-0.957 0.095 -2.108" clipDistance="600" nodeId="126" materialIds="9" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="8" name="supportColl" translation="0 0 -0.400521" rotation="90 0 0" compoundChild="true" collisionMask="8450" clipDistance="600" nodeId="127" materialIds="17" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="19" name="pied_arriere" translation="-0.957 0.095 -2.108" clipDistance="300" nodeId="126" materialIds="9" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="8" name="supportColl" translation="0 0 -0.400521" rotation="90 0 0" compoundChild="true" collisionMask="8450" clipDistance="300" nodeId="127" materialIds="17" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           </Shape>
-          <Shape shapeId="19" name="pied_arriere" translation="0.947 0.095 -2.108" clipDistance="600" nodeId="128" materialIds="9" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="8" name="supportColl" translation="0 0 -0.400521" rotation="90 0 0" compoundChild="true" collisionMask="8450" clipDistance="600" nodeId="129" materialIds="17" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="19" name="pied_arriere" translation="0.947 0.095 -2.108" clipDistance="300" nodeId="128" materialIds="9" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="8" name="supportColl" translation="0 0 -0.400521" rotation="90 0 0" compoundChild="true" collisionMask="8450" clipDistance="300" nodeId="129" materialIds="17" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           </Shape>
         </TransformGroup>
         <TransformGroup name="verrin1" translation="0.968067 0.286764 -2.03667" rotation="202 0 0" nodeId="130">
-          <Shape shapeId="20" name="verin_portique" clipDistance="600" nodeId="131" materialIds="9" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="21" name="tige_portique" translation="9.98896e-08 0 1.1426" rotation="0 180 0" clipDistance="600" nodeId="132" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="20" name="verin_portique" clipDistance="300" nodeId="131" materialIds="9" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="21" name="tige_portique" translation="9.98896e-08 0 1.1426" rotation="0 180 0" clipDistance="300" nodeId="132" materialIds="9" castsShadows="true" receiveShadows="true"/>
           </Shape>
         </TransformGroup>
         <TransformGroup name="verrin2" translation="-0.945222 0.287 -2.037" rotation="202 0 0" nodeId="133">
-          <Shape shapeId="20" name="verin_portique" clipDistance="600" nodeId="134" materialIds="9" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="21" name="tige_portique" translation="9.98896e-08 0 1.1426" rotation="0 180 0" clipDistance="600" nodeId="135" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="20" name="verin_portique" clipDistance="300" nodeId="134" materialIds="9" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="21" name="tige_portique" translation="9.98896e-08 0 1.1426" rotation="0 180 0" clipDistance="300" nodeId="135" materialIds="9" castsShadows="true" receiveShadows="true"/>
           </Shape>
         </TransformGroup>
         <Shape shapeId="22" name="optima" translation="1.03 0.365179 -1" scale="1 1.5 1.5" clipDistance="300" nodeId="136" materialIds="28"/>
@@ -233,19 +233,19 @@
       </Shape>
       <Shape shapeId="26" name="waterTrigger" visibility="false" kinematic="true" compound="true" trigger="true" collisionMask="8388608" nodeId="141" materialIds="23" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
     </Shape>
-    <Shape shapeId="27" name="tourelle_col" translation="0 2.5 -1" dynamic="true" compound="true" collisionMask="8194" density="5" clipDistance="600" nodeId="142" materialIds="21" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-    <Shape shapeId="27" name="tuyau_col" translation="0 1.58832 -1.07006" dynamic="true" compound="true" collisionMask="8194" density="10" clipDistance="600" nodeId="143" materialIds="21" castsShadows="true" receiveShadows="true" nonRenderable="true">
+    <Shape shapeId="27" name="tourelle_col" translation="0 2.5 -1" dynamic="true" compound="true" collisionMask="8194" density="5" clipDistance="300" nodeId="142" materialIds="21" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+    <Shape shapeId="27" name="tuyau_col" translation="0 1.58832 -1.07006" dynamic="true" compound="true" collisionMask="8194" density="10" clipDistance="300" nodeId="143" materialIds="21" castsShadows="true" receiveShadows="true" nonRenderable="true">
       <TransformGroup name="transform" translation="0 -0.189851 0.0289927" rotation="-14.6 0 0" nodeId="144">
         <TransformGroup name="fix" nodeId="145">
           <Shape shapeId="28" name="tuyau_droit1" translation="-0.00405703 0 -3.861" rotation="0 169 0" nodeId="146" materialIds="21,18"/>
           <Shape shapeId="28" name="tuyau_droit2" translation="-0.0075042 0 -3.825" scale="1 1 0" nodeId="147" materialIds="21,18"/>
           <TransformGroup name="fix_canon" translation="0 0 -4.003" nodeId="148"/>
-          <Shape shapeId="8" name="supportColl" translation="0 0 -3.62" rotation="14.6 0 0" scale="1 1 4" compoundChild="true" collisionMask="8450" clipDistance="600" nodeId="149" materialIds="17" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="8" name="supportColl" translation="0 0 -3.62" rotation="14.6 0 0" scale="1 1 4" compoundChild="true" collisionMask="8450" clipDistance="300" nodeId="149" materialIds="17" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
         </TransformGroup>
       </TransformGroup>
     </Shape>
     <Shape shapeId="29" name="canon" translation="0 0.435061 -4.779" dynamic="true" compound="true" collisionMask="8194" staticFriction="0.05" dynamicFriction="0.05" linearDamping="0.5" angularDamping="0" density="0.6" clipDistance="600" nodeId="150" materialIds="21" castsShadows="true" receiveShadows="true" nonRenderable="true">
-      <Shape shapeId="30" name="chassis_canon" translation="0 0.617192 -0.448165" clipDistance="600" nodeId="151" materialIds="27" castsShadows="true" receiveShadows="true">
+      <Shape shapeId="30" name="chassis_canon" translation="0 0.617192 -0.448165" clipDistance="300" nodeId="151" materialIds="27" castsShadows="true" receiveShadows="true">
         <TransformGroup name="transform" translation="0.00574911 1.196 -0.199137" nodeId="152">
           <Shape shapeId="31" name="canon" translation="-0.004 0.128 -0.136816" nodeId="153" materialIds="19" castsShadows="true" receiveShadows="true"/>
           <TransformGroup name="particle" translation="-0.014 0.314077 -0.57898" rotation="-60 -0 0" nodeId="154"/>
@@ -262,7 +262,7 @@
       <TransformGroup name="attacherjoint" translation="-1.75587e-08 1 -1.25" rotation="0 -90 0" nodeId="162"/>
       <TransformGroup name="roue" translation="0 -0.03 0.832" scale="0.8 1 1" nodeId="163"/>
     </Shape>
-    <Shape shapeId="32" name="collision_portique" translation="-0.032391 0.927086 -4.963" rotation="-90 72.0261 -90" dynamic="true" compound="true" collisionMask="8194" restitution="1" density="5" clipDistance="600" nodeId="164" materialIds="21" nonRenderable="true">
+    <Shape shapeId="32" name="collision_portique" translation="-0.032391 0.927086 -4.963" rotation="-90 72.0261 -90" dynamic="true" compound="true" collisionMask="8194" restitution="1" density="5" clipDistance="300" nodeId="164" materialIds="21" nonRenderable="true">
       <TransformGroup name="transform" translation="0 0.026002 0" nodeId="165"/>
     </Shape>
     <Camera name="camera" translation="-4.15494 3.79542 -1.84504" rotation="164.642 -81.9785 -180" nodeId="166" fov="60" nearClip="0.1" farClip="10000" orthographicHeight="1"/>
